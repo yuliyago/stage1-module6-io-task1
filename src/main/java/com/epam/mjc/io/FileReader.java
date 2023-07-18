@@ -22,10 +22,8 @@ public class FileReader {
             rawDataFromFile= bld.toString();
         } catch (FileNotFoundException e) {
             logger.info("Required file hasn't been found.");
-//            System.out.println("Required file hasn't been found.");
         } catch (IOException e) {
             logger.info("Input/output exception has been thrown.");
-//            System.out.println("Input/output exception has been thrown.");
         }
         return rawDataFromFile;
     }
